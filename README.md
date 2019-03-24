@@ -24,9 +24,9 @@ El endpopoint de insercion, requiere tambien de token y como unico campo obligat
              
 ![Ejemplo Insert](https://i.imgur.com/arT79kl.png)
 
+Ficheros como el mongocreardb.js o inserttoken.js, tienen partes de codigo que he codigo de pruebas anteriores de proyectos propios con los cuales aprendi el funcionamiento de node y mongo siguiendo cursos, por lo que no es codigo 100% mio.
 
 Si se desea probar la api sin ejecutarla en una maquina propia, se podria probar con estas url's, siguiendo las indicaciones mencionadas arriba:
-
              endpoint de consulta  -> 104.248.44.149:3001/apifintonic
              endpoint de borrado   -> 104.248.44.149:3001/apifintonic/delete
              endpoint de insercion -> 104.248.44.149:3001/apifintonic/insert
