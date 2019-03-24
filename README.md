@@ -7,6 +7,12 @@ Se lanzaria la api con server.js, pero antes de eso se recomienda lanzar mongocr
 
 Dicho token, ahora mismo se inserta a mano y se comprueba simplemente su existencia en la bd, lo ideal seria que hubiese una api que al autentificarse con user/pw te devuelva un token, y ese token sirva para realizar las acciones que requieran de autentificacion.
 ___
+Primero, el endpoint de listado de todos los productos, tiene un funcionamiento simple, lista todos los productos insertados
+
+             /apifintonic
+
+![Ejemplo Listado](https://i.imgur.com/5u7AtmV.png)
+
 El endpoint de borrado, borra productos en base al id del objecto de ese producto, por lo que solo de puede eliminar un producto.
 
              /apifintonic/delete?token=xJcAN19r4H&idproducto=5c97e70aa0646423b468610e
