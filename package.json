@@ -1,0 +1,19 @@
+{
+  "name": "prueba-fintonic",
+  "version": "1.0.0",
+  "description": "API - Node.JS - Express + MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvmisha/Prueba-Fintonic.git"
+  },
+  "author": "MM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvmisha/Prueba-Fintonic/issues"
+  },
+  "homepage": "https://github.com/mvmisha/Prueba-Fintonic#readme"
+}
