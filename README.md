@@ -9,18 +9,18 @@ Dicho token, ahora mismo se inserta a mano y se comprueba simplemente su existen
 ___
 Primero, el endpoint de listado de todos los productos, tiene un funcionamiento simple, lista todos los productos insertados
 
-             /apifintonic
+             :3001/apifintonic
 
 ![Ejemplo Listado](https://i.imgur.com/5u7AtmV.png)
 
 El endpoint de borrado, borra productos en base al id del objecto de ese producto, por lo que solo de puede eliminar un producto.
 
-             /apifintonic/delete?token=xJcAN19r4H&idproducto=5c97e70aa0646423b468610e
+             :3001/apifintonic/delete?token=xJcAN19r4H&idproducto=5c97e70aa0646423b468610e
 
 El endpopoint de insercion, requiere tambien de token y como unico campo obligatorio el nombre, pero ademas se puede añadir una descripcion.
 
-             /apifintonic/insert?token=xJcAN19r4H&nombre=Telefono
-             /apifintonic/insert?token=xJcAN19r4H&nombre=Portatil&descripcion=Un portatil gris 
+             :3001/apifintonic/insert?token=xJcAN19r4H&nombre=Telefono
+             :3001/apifintonic/insert?token=xJcAN19r4H&nombre=Portatil&descripcion=Un portatil gris 
              
 ![Ejemplo Insert](https://i.imgur.com/arT79kl.png)
 
