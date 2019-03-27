@@ -9,26 +9,26 @@ Dicho token, ahora mismo se inserta a mano y se comprueba simplemente su existen
 ___
 Primero, el endpoint de listado de todos los productos, tiene un funcionamiento simple, lista todos los productos insertados
 
-             :3001/apifintonic
+             :3001/api
 
 ![Ejemplo Listado](https://i.imgur.com/5u7AtmV.png)
 
 El endpoint de borrado, borra productos en base al id del objecto de ese producto, por lo que solo de puede eliminar un producto.
 
-             :3001/apifintonic/delete?token=xJcAN19r4H&idproducto=5c97e70aa0646423b468610e
+             :3001/api/delete?token=xJcAN19r4H&idproducto=5c97e70aa0646423b468610e
 
 El endpopoint de insercion, requiere tambien de token y como unico campo obligatorio el nombre, pero ademas se puede añadir una descripcion.
 
-             :3001/apifintonic/insert?token=xJcAN19r4H&nombre=Telefono
-             :3001/apifintonic/insert?token=xJcAN19r4H&nombre=Portatil&descripcion=Un portatil gris 
+             :3001/api/insert?token=xJcAN19r4H&nombre=Telefono
+             :3001/api/insert?token=xJcAN19r4H&nombre=Portatil&descripcion=Un portatil gris 
              
 ![Ejemplo Insert](https://i.imgur.com/arT79kl.png)
 
 Ficheros como el mongocreardb.js o inserttoken.js, tienen partes de codigo que he codigo de pruebas anteriores de proyectos propios con los cuales aprendi el funcionamiento de node y mongo siguiendo cursos, por lo que no es codigo 100% mio.
 
 Si se desea probar la api sin ejecutarla en una maquina propia, se podria probar con estas url's, siguiendo las indicaciones mencionadas arriba:
-             endpoint de consulta  -> 104.248.44.149:3001/apifintonic
-             endpoint de borrado   -> 104.248.44.149:3001/apifintonic/delete
-             endpoint de insercion -> 104.248.44.149:3001/apifintonic/insert
+             endpoint de consulta  -> 104.248.44.149:3001/api
+             endpoint de borrado   -> 104.248.44.149:3001/api/delete
+             endpoint de insercion -> 104.248.44.149:3001/api/insert
   
  
