@@ -1,5 +1,5 @@
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/fintonic";
+var url = "mongodb://localhost:27017/dbapi";
 
 MongoClient.connect(url, function(err, db) {
   if (err) throw err;
