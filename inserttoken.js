@@ -4,7 +4,7 @@ var url = "mongodb://localhost:27017/";
 
 MongoClient.connect(url, function(err, db) {
   if (err) throw err;
-  var dbo = db.db("fintonic");
+  var dbo = db.db("dbapi");
   var myobj = [{ token: "xJcAN19r4H"}];
   dbo.collection("tokens").insertMany(myobj, function(err, res) {
     if (err) throw err;
