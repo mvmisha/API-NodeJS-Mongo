@@ -1,4 +1,4 @@
-# Prueba-Fintonic
+# API-NodeJS-Mongo
 API - Node.JS - Express + MongoDB
 
 Se ha hecho la api usando node.js y express, almacenando los datos en mongodb.
