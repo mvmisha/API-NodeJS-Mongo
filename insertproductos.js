@@ -4,7 +4,7 @@ var url = "mongodb://localhost:27017/";
 
 MongoClient.connect(url, function(err, db) {
   if (err) throw err;
-  var dbo = db.db("fintonic");
+  var dbo = db.db("dbapi");
   var myobj = [{ nombre: "Agua", descripcion: "Agua del grifo" },
                  { nombre: "Vaso", descripcion: "Un vaso lleno de agua" },
                  { nombre: "Portatil", descripcion: "El buen HP" },
