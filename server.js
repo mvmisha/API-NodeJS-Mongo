@@ -5,10 +5,10 @@ var express = require("express"),
     ObjectId = require('mongodb').ObjectID,
     url = "mongodb://localhost:27017/";
 
-router.get('/apifintonic/insert', function (req, res) {
+router.get('/api/insert', function (req, res) {
     MongoClient.connect(url, function (err, db) {
         if (err) throw err;
-        var dbo = db.db("fintonic");
+        var dbo = db.db("dbapi");
         var query = {
             token: req.query.token
         };
@@ -18,7 +18,7 @@ router.get('/apifintonic/insert', function (req, res) {
                 if (req.query.nombre != null && req.query.nombre != "" && req.query.nombre != " ") {
                     MongoClient.connect(url, function (err, db) {
                         if (err) throw err;
-                        var dbo = db.db("fintonic");
+                        var dbo = db.db("dbapi");
                         var myobj = {
                             nombre: req.query.nombre,
                             descripcion: req.query.descripcion
@@ -39,10 +39,10 @@ router.get('/apifintonic/insert', function (req, res) {
         });
     });
 });
-router.get('/apifintonic/delete', function (req, res) {
+router.get('/api/delete', function (req, res) {
     MongoClient.connect(url, function (err, db) {
         if (err) throw err;
-        var dbo = db.db("fintonic");
+        var dbo = db.db("dbapi");
         var query = {
             token: req.query.token
         };
@@ -52,7 +52,7 @@ router.get('/apifintonic/delete', function (req, res) {
                 if (req.query.idproducto != null && req.query.idproducto != "" && req.query.idproducto != " ") {
                     MongoClient.connect(url, function (err, db) {
                         if (err) throw err;
-                        var dbo = db.db("fintonic");
+                        var dbo = db.db("dbapi");
                         var myquery = {
                             "_id": ObjectId(req.query.idproducto)
                         };
@@ -77,10 +77,10 @@ router.get('/apifintonic/delete', function (req, res) {
         });
     });
 });
-router.get('/apifintonic', function (req, res) {
+router.get('/api', function (req, res) {
     MongoClient.connect(url, function (err, db) {
         if (err) throw err;
-        var dbo = db.db("fintonic");
+        var dbo = db.db("dbapi");
         dbo.collection("productos").find({}).toArray(function (err, result) {
             if (err) throw err;
             res.send(result)
